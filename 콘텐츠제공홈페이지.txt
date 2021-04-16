@@ -1,3 +1,6 @@
 google font
 font awesome -> cdn(주소 필요)
 cdnjs -> fontawesome 입력 -> copy link tag
+
+
+w3schools.com(연습 홈페이지)
