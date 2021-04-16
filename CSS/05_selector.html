@@ -46,6 +46,17 @@
         input[type="radio"]:hover + label {
             font-weight: bolder;
         }
+        input[checked] + label {  /* checked 속성을 가지고 있는 input 태그의 바로 뒤 label 태그 */
+            color: red;
+        }
+        /* 상태 */
+        input[type="radio"]:checked + label {  /* checked 상태의 radio(선택된 radio) */
+            color: limegreen;
+        }
+        /* 7. 구조 */
+        ul > li:nth-of-type(1) {  /* first-of-type */
+            font-weight: 900;
+        }
         
     </style>
 </head>
@@ -85,12 +96,24 @@
     <form>
         <input id="yes" type="radio" name="agreement" value="yes">
         <label for="yes">동의합니다</label>
-        <input id="no" type="radio" name="agreement" value="no">
+        <input id="no" type="radio" name="agreement" value="no" checked>
         <label for="no">동의하지 않습니다</label><br>
         <button>전송하기</button>
         <input type="button" value="취소하기">
     </form>
     
-  
+    <!-- 5. 구조 -->
+    <ul>
+        <li>Java</li>
+        <li>Oracle</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+        <li>JSP/Servlet</li>
+        <li>Spring</li>
+        <li>Portfolio</li>
+    </ul>
+    
 </body>
 </html>
