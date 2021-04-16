@@ -3,7 +3,14 @@
 <head>
     <meta charset="utf-8">
     <title>텍스트</title>
+    
+    <!-- 1) 웹 폰트를 위한 link -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
     <style>
+        
+        /* 2) 웹 폰트를 위한 @import */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
         
         p {
             /* 1. 정렬: left, right, center, jusify */
@@ -54,6 +61,13 @@
             /* 5. 글꼴 (시스템에 설치된 글꼴) */
             /* 설치된 글꼴이 있으면 사용되고, 없으면 시스템 기본 글꼴이 사용된다. */
             font-family: '맑은 고딕 굵게', sans-serif;  /* sans-serif : 고딕 계열 */
+            
+            /* 6. 글꼴 (웹 폰트) */
+            /*
+                1) link 태그를 추가하고 해당 font의 font-family 지정
+                2) @import를 추가하고 해당 font의 font-familiy 지정
+            */
+            font-family: 'Noto Sans KR', sans-serif;
             
         }
         
