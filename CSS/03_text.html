@@ -15,11 +15,46 @@
             
             /* 3. 들여쓰기 */
             text-indent: 50px;
+            
+            /* 4. 밑줄(underline), 윗줄(overline), 취소선(line-through) */
+            text-decoration: underline;
+            
+            /* 5. 그림자 */
+            /* text-shadow: 가로방향 세로방향 크기 색상 */
+            text-shadow: 5px 5px 1px silver, 3px 3px 1px yellow;
+            
         }
         
         /* 인라인 요소는 블록 레벨에 적용되는 css 속성을 처리하지 못한다. */
         span {
             text-align: center;
+        }
+        
+        /* a 태그는 디폴트를 없애준다. */
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        pre {
+            
+            /* 1. 크기 */
+            font-size: 20px;
+            
+            /* 2. 스타일 (기울임(italic), 오블리크(oblique))*/
+            font-style: italic;
+            
+            /* 3. 굵기 조절 (lighter, normal, bold, bolder, 100~900(백단위)) */
+            font-weight: bolder;
+            
+            /* 4. 색상 */
+            color: #4e3c35;  /* 글자색(RGB) */  /* ctrl + e -> rgb표 */ 
+            background-color: tomato;  /* 배경색 */
+            
+            /* 5. 글꼴 (시스템에 설치된 글꼴) */
+            /* 설치된 글꼴이 있으면 사용되고, 없으면 시스템 기본 글꼴이 사용된다. */
+            font-family: '맑은 고딕 굵게', sans-serif;  /* sans-serif : 고딕 계열 */
+            
         }
         
     </style>
@@ -31,6 +66,14 @@
     
     <!-- span 태그는 "인라인 요소" -->
     <span>사랑하며 살면은 평화가 올거야~!</span>
+    
+    <br>
+    
+    <a href="https://www.naver.com">네이버로 가자!</a>
+    
+    <br>
+    
+    <pre>날아라 슈퍼보드!</pre>
     
 </body>
 </html>
