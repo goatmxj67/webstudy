@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>텍스트</title>
+    <style>
+        
+        p {
+            /* 1. 정렬: left, right, center, jusify */
+            /* 주의사항: 인라인 요소는 정렬되지 않는다. */
+            text-align: left;
+            
+            /* 2. 행 높이 */
+            line-height: 50px;  /* px */
+            
+            /* 3. 들여쓰기 */
+            text-indent: 50px;
+        }
+        
+        /* 인라인 요소는 블록 레벨에 적용되는 css 속성을 처리하지 못한다. */
+        span {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <!-- p 태그는 "블록 레벨" -->
+    <p>지기지기자가자가조고조고조 지기지기자가자가조고조고조 나쁜 짓을 하면은 지기지기자가자가조고조고조 지기지기자가자가조고조고조 우리에게 들키지! 낮에도 밤에도 느낄 수 있는 눈과 귀가 있다네 우리의 손오공!</p>
+    
+    <!-- span 태그는 "인라인 요소" -->
+    <span>사랑하며 살면은 평화가 올거야~!</span>
+    
+</body>
+</html>
