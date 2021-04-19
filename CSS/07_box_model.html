@@ -8,9 +8,49 @@
         /* 주의: 블록레벨태그에만 반영되고, 인라인요소에는 반영되지않는다. */
         /* 배경: background */
         /* 테두리: border */
+        /* 내부여백: padding, border 안쪽 */
+        /* 외부여백: margin, border 바깥쪽 */
+        /* 그림자: box-shadow */
+        
+        #box1 {
+            width: 300px;
+            height: 50px;
+        }
+        
+        #box2 {
+            /* 1. box크기 == img크기 */
+            /*
+            width: 640px;
+            height: 390px;
+            background-image: url(./images/cat.jpg);
+            background-size: 640px 390px;  너비 높이 
+            */
+            /* 2. box크기 < img크기 */
+            /*
+            width: 300px;
+            height: 300px;
+            background-image: url(images/cat.jpg);
+            background-size: 300px 300px;  이미지 비율을 무시하면 찌그러진다. 
+            background-size: cover;  이미지 비율을 유지하며 맞춤. 단, 잘려나가는 부분이 발생.
+            */
+            /* 3. box크기 > img크기 */
+            width: 1000px;
+            height: 500px;
+            background-image: url(images/cat.jpg);
+            background-repeat: no-repeat;
+            background-position: bottom center;  /* 세로(top, 생략(middle), bottom) 가로(left, center, right) */
+        }
     </style>
 </head>
 <body>
+    
+    <!-- div 태그: 블록레벨, 영역을 만들 때 사용한다. -->
+    
+    <!-- 1. 너비/높이 -->
+    <div id="box1">너비/높이 박스</div>
+    
+    <!-- 2. 이미지 배경 -->
+    <div id="box2"></div>
     
 </body>
 </html>
