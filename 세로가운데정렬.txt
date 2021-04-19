@@ -1,0 +1,12 @@
+** 세로 가운데 정렬
+
+height: 20px;
+line-height: 20px;
+
+-------------------------
+
+padding-top: 10px;
+padding-bottom: 10px;
+
+ㄴ> padding: auto 10px(아무값이나 상관없음)
+
