@@ -20,7 +20,7 @@
         header {
             padding: 106px 0 53px;
         }
-        header > .naver_logo {
+        header > .big-naver-logo {
             margin: 0 auto;
             width: 231px;
             height: 44px;
@@ -38,6 +38,7 @@
             padding: 5px 10px;
             margin-bottom: 5px;
             font-size: 14px;
+            border: 2px solid #c2c2c2;
         }
         section > form > input:focus {
             outline: none;  /* 태그에 씀 border를 강제로 없앰*/
@@ -49,6 +50,7 @@
             margin: 12px 0 14px;
             background-color: #03c75a;
             color: #ffffff;
+            font-size: 16px;
             font-weight: 900;
             border: none;
         }
@@ -98,6 +100,41 @@
             font-weight: 600;
             letter-spacing: -.6px;
         }
+        .find-info {
+            color: #8e8e8e;
+            font-size: 14px;
+            padding-top: 18px;
+            text-align: center;
+        }
+        aside > .banner {
+            margin: 50px auto 40px;
+            max-width: 460px;
+            height: 147px;
+            background-image: url(https://ssl.pstatic.net/static/nid/login/pc_460_166_0716.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        footer {
+            width: 100%;
+            text-align: center;
+        }
+        footer > .naver-info {
+            font-size: 12px;
+        }
+        footer > .company-info {
+            font-size: 9px;
+            display: flex;
+            justify-content: center;
+        }
+        footer > .company-info > .small-naver-logo {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: 50px;
+            height: 12px;
+            background-image: url(images/naverLogo.PNG);
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
 <body>
@@ -106,14 +143,14 @@
         <!-- 로고 영역 -->
         <header>
             <!-- 로고 -->
-            <div class="naver_logo"></div>
+            <div class="big-naver-logo"></div>
         </header>
         <!-- 본문 영역 -->
         <section>
             <!-- 아이디, 비밀번호, 로그인 버튼 -->
             <form action="https://nid.naver.com/nidlogin.login" method="post">
-                <input type="text" placeholder="아이디">
-                <input type="password" placeholder="비밀번호">
+                <input type="text" placeholder="아이디"><span id="input-id-check"></span><!-- 아이디를 입력해주세요 -->
+                <input type="password" placeholder="비밀번호"><span id="input-pwd-check"></span><!-- 비밀번호를 입력해주세요 -->
                 <input type="submit" value="로그인">
             </form>
             <!-- 로그인상태유지, IP보안 -->
@@ -139,7 +176,7 @@
                 </div>
             </article>
             <!-- 아이디찾기, 비밀번호찾기, 회원가입 -->
-            <article class="">
+            <article class="find-info">
                 <a>아이디 찾기</a> | <a>비밀번호 찾기</a> | <a>회원가입</a>
             </article>
         </section>
@@ -149,12 +186,12 @@
         </aside>
         <!-- 이용약관 등 -->
         <footer>
-            <p>
+            <p class="naver-info">
                 <a>이용약관</a> | <a><strong>개인정보처리방침</strong></a> | <a>책임의 한계와 법적고지</a> | <a>회원정보 고객센터</a>
             </p>
-            <div>
-                <h3>NAVER</h3>
-                <p>Copyright &copy; <strong>NAVER Corp.</strong> All Rights Reserved.</p>
+            <div class="company-info">
+                <div class="small-naver-logo"></div>
+                <div>Copyright &copy; <strong>NAVER Corp.</strong> All Rights Reserved.</div>
             </div>
         </footer>
     </div>
