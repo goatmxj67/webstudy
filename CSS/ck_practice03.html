@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>practice03</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .div1 {
+            width: 460px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .header {
+            width: 100%;
+            height: 30px;
+            font-size: 20px;
+            text-align: center;
+            background-color: lightgray;
+            /*box-shadow: 10px 10px 10px gray;*/
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            height: 200px;
+            background-color: beige;
+        }
+        .left {
+            width: 49%;
+            height: 80%;
+            text-align: center;
+        }
+        .left > button:nth-of-type(1) {
+            width: 210px;
+            height: 31px;
+            margin-top: 10px;
+            text-align: left;
+            background-color: darkgray;
+            font-size: 12px;
+            color: darkslategray;
+            border-radius: 5px;
+            border: none;
+        }
+        .left > button:nth-of-type(1) > i {
+            color: white;
+        }
+        .forget_1 {
+            display: block;
+            float: right;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: darkgray;
+        }
+        .left > button:nth-of-type(2) {
+            width: 210px;
+            height: 31px;
+            text-align: left;
+            background-color: darkgray;
+            font-size: 12px;
+            color: darkslategray;
+            border-radius: 5px;
+            border: none;
+        }
+        .left > button:nth-of-type(2) > i {
+            color: white;
+        }
+        .forget_2 {
+            display: block;
+            float: right;
+            padding-bottom: 15px;
+            font-size: 14px;
+            color: darkgray;
+        }
+        .login {
+            width: 130px;
+            height: 40px;
+            display: block;
+            float: right;
+            margin-right: 7px;
+            color: white;
+            background-color: red;
+            border-radius: 5px;
+            border: none;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .right {
+            width: 49%;
+            height: 80%;
+        }
+        .right > button:nth-of-type(1) {
+            margin-top: 10px;
+            width: 210px;
+            height: 31px;
+            background-color: skyblue;
+            text-align: left;
+            color: white;
+            border-radius: 5px;
+            border: none;
+        }
+        .right > button:nth-of-type(1) > i {
+            color: white;
+        }
+        .right > button:nth-of-type(2) {
+            margin-top: 10px;
+            width: 210px;
+            height: 31px;
+            background-color: darkblue;
+            text-align: left;
+            color: white;
+            border-radius: 5px;
+            border: none;
+        }
+        .right > button:nth-of-type(2) > i {
+            color: white;
+        }
+        .right > button:nth-of-type(3) {
+            margin-top: 10px;
+            width: 210px;
+            height: 31px;
+            background-color: orangered;
+            text-align: left;
+            color: white;
+            border-radius: 5px;
+            border: none;
+        }
+        .right > button:nth-of-type(3) > i {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="container">
+            <div class="header">
+                <h3>WELCOME</h3>
+            </div>
+            <div class="content">
+                <span class="left">
+                    <button><i class="far fa-smile"></i>&nbsp;&nbsp; User or Email</button>
+                    <span class="forget_1">Forgot your username?</span>
+                    <button><i class="fas fa-unlock"></i>&nbsp;&nbsp; Password</button>
+                    <span class="forget_2">Forgot your username?</span>
+                    <button class="login">LOGIN NOW</button>
+                </span>
+                <span class="right">
+                    <button><i class="fab fa-twitter"></i>&nbsp;&nbsp;Log in with Twitter</button>
+                    <button><i class="fab fa-facebook-f"></i>&nbsp;&nbsp;Log in with Facebook</button>
+                    <button><i class="fab fa-google-plus-g"></i>&nbsp;&nbsp;Log in with Google+</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
