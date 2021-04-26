@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<body>
+	<!-- <div id="one-to-ten"></div> -->
+	<div id="list1"></div>
+	<script>
+		/* var n = 1;
+		var result = '';
+		while(n <= 10) {
+			result += n + '<br>';
+			n++;
+		}
+			document.getElementById('one-to-ten').innerHTML = result; */
+			
+		/* var n = 1;
+		while(n <= 10) {
+			document.getElementById('one-to-ten').innerHTML += n + '<br>';
+			n++;
+		} */
+		
+		var ul = document.createElement('ul');
+		document.getElementById('list1').appendChild(ul);
+		var n = 1;
+		while(n<=5) {
+			var li = document.createElement('li');
+			li.textContent = n;
+			ul.appendChild(li);
+			n++;
+		}
+		
+		/* var result = '<ul>';
+		var n = 1;
+		while (n <= 5) {
+			result += '<li>' + n;  // + '</li>';
+			n++;
+		}
+		result += '</ul>';
+		document.getElementById('list1').innerHTML = result; */
+		
+	</script>
+
+</body>
+</html>
