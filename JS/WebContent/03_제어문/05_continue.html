@@ -26,5 +26,25 @@
 		}
 		document.getElementById('practice1').innerHTML = message;
 	</script>
+	<div id="practice2"></div>
+	<script>
+		// 5개의 양수를 입력 받아서 그 평균을 출력하시오.
+		// 양수 이외의 데이터가 입력되면 '양수가 아닙니다. 다시 입력하세요.'
+		// 메시지를 출력한 뒤 다시 입력을 받으시오. (양수만 5개를 입력 받는다.)
+		// Hint. NaN(Not a Number)을 검사하는 isNaN() 함수를 사용해 보세요.
+		
+		var count = 0;
+		var total = 0;
+		while (count < 5) {
+			let n = parseInt(prompt((count + 1) + '번째 양수를 입력하세요.'));
+			if ( n <= 0 || isNaN(n) ) {
+				alert(n + '은 양수가 아닙니다. 다시 입력하세요.');
+				continue;  // while (count < 5) { 로 이동
+			}
+			count++;
+			total += n;
+		}
+		document.getElementById('practice2').textContent = total;
+	</script>
 </body>
 </html>
