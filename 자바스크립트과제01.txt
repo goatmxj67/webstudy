@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>과제01</title>
+	<style>
+		table{
+			border-collapse: collapse;
+		}
+		td {
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			border: 1px solid black;
+		}
+		caption {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<caption>다이얼</caption>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>
+			<tr>
+				<td>*</td>
+				<td>0</td>
+				<td>#</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

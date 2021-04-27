@@ -3,9 +3,24 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
+	<style>
+		table{
+			border-collapse: collapse;
+		}
+		td {
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			border: 1px solid black;
+		}
+		caption {
+			color: red;
+		}
+	</style>
 </head>
 <body>
-
+	<div id="practice1"></div>
+	
 	<script>
 	
 	var table = document.createElement('table');
@@ -14,7 +29,7 @@
 	
 	var caption = document.createElement('caption');
 	caption.textContent = '다이얼';
-	document.getElementsByTagName('tbody').appendChild(caption);
+	table.appendChild(caption);
 	
 	for(let i=0; i<=6; i += 3) {
 		var tr = document.createElement('tr');
@@ -30,22 +45,16 @@
 	tbody.appendChild(tr);
 	var td = document.createElement('td');
 	td.textContent = '*';
+	tr.appendChild(td);
 	var td = document.createElement('td');
 	td.textContent = '0';
+	tr.appendChild(td);
 	var td = document.createElement('td');
 	td.textContent = '#';
 	tr.appendChild(td);
 	tbody.appendChild(tr);
-	table.appendChild(tbody);
 	
-	table.style.borderCollapse = 'collapse';
-	
-	caption.style.color = 'red';
-	
-	td.style.width = '50px';
-	td.style.height = '50px';
-	td.style.border = '1px solid black';
-	td.style.textAlign = 'center';
+	document.getElementById('practice1').appendChild(table);
 	
 	</script>
 </body>
