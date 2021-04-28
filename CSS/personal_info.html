@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>개인정보입력 폼</title>
+    <style>
+        body {
+            background-color: #e4f8ff;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 26px;
+            font-weight: 900;
+            padding: 10px 10px;
+        }
+        tr > td:nth-of-type(2) {
+            width: 300px;
+            height: 40px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 0 5px;
+        }
+        tr:nth-of-type(1) {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            height: 40px;
+        }
+        .front, .back {
+            width: 80px;
+        }
+        .yy, .mm, .dd {
+            width: 50px;
+        }
+        tr:nth-last-child(2) {
+            height: 200px;
+        }
+        tr:nth-last-child(1) > th > button {
+            margin-top: 10px;
+            color: white;
+            background-color: darkblue;
+            padding: 10px 10px;
+        }
+        tr:nth-last-child(1) > th > button > a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>개인정보입력 폼</caption>
+        <tbody>
+            <tr>
+                <td colspan="2">개인정보</td>
+            </tr>
+            <tr>
+                <td>주민등록번호</td>
+                <td><input type="text" class="front"> - <input type="text" class="back"> <button>검증</button></td>
+            </tr>
+            <tr>
+                <td>생일</td>
+                <td><input type="text" class="yy">년<input type="text" class="mm">월<input type="text" class="dd">일</td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td><input type="radio">남자<input type="radio">여자</td>
+            </tr>
+            <tr>
+                <td>관심분야</td>
+                <td><input type="checkbox">여행<input type="checkbox">영화<input type="checkbox">독서<input type="checkbox">음악<input type="checkbox">관심없음</td>
+            </tr>
+            <tr>
+                <td>자기소개</td>
+                <td><textarea rows="12" cols="37" ></textarea></td>
+            </tr>
+            <tr>
+                <th colspan="2"><button><a href="board.html">수정완료</a></button></th>
+            </tr>    
+        </tbody>
+    </table>
+</body>
+</html>
