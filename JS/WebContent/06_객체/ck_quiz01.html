@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		table {
+			border-collapse: collapse;
+		}
+		th, td {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div id="practice1"></div>
+	<script>
+		var people = [
+			{
+				'name': '브레드',
+				'age': 10
+			},
+			{
+				'name': '윌크',
+				'age': 5
+			},
+			{
+				'name': '초코',
+				'age': 4
+			}
+		];
+		
+		var table = document.createElement('table');
+		var tbody = document.createElement('tbody');
+		table.appendChild(tbody);
+		var tr = document.createElement('tr');
+		var th = document.createElement('th');
+		th.textContent = '이름';
+		tr.appendChild(th);
+		var th = document.createElement('th');
+		th.textContent = '나이';
+		tr.appendChild(th);
+		tbody.appendChild(tr);
+		
+		for (let i=0; i<people.length; i++) {
+			var tr = document.createElement('tr');
+			var td = document.createElement('td');
+			td.textContent = people[i].name;
+			tr.appendChild(td);
+			var td = document.createElement('td');
+			td.textContent = people[i].age;
+			tr.appendChild(td);
+			tbody.appendChild(tr);
+			table.appendChild(tbody);
+		}
+		
+		document.getElementById('practice1').appendChild(table);
+	
+	</script>
+</body>
+</html>
