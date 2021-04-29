@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		#box {
+			width: 500px;
+			height: 500px;
+			text-align: center;
+			line-height: 500px;
+			font-size: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+	
+	<script>
+		var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'navy', 'violet']
+		var color = ['빨', '주', '노', '초', '파', '남', '보'];
+		var i = 0;
+		function changeColor() {
+			setTimeout(function(){
+					document.getElementById('box').textContent = color[i];
+					document.getElementById('box').style.backgroundColor = colors[i];
+					i++; 
+					i %= 7;
+					changeColor();  
+			}, 1000);
+		}
+		
+		changeColor();
+	
+	</script>
+	
+</body>
+</html>
