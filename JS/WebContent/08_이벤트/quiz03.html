@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script>
+		// 난수 만들기 버튼을 클릭하면 0 ~ 9 사이의 난수가 출력된다.
+		
+		onload = function() {
+			document.getElementById('random-btn').addEventListener('click', function(){
+				document.getElementById('random-box').textContent = parseInt(Math.random() * 10);
+			});
+		}
+		
+	</script>
+</head>
+<body>
+	<input type="button" value="난수 만들기" id="random-btn">
+	<div id="random-box"></div>
+</body>
+</html>
