@@ -22,7 +22,7 @@ header > h1 {
     width: 240px;
     height: 44px;
     margin: 0 auto;
-    background-image: url(images/naver.png);
+    background-image: url(../images/naver.png);
     background-size: cover;
     background-position: center;
 }
@@ -62,6 +62,18 @@ label {
     font-size: 15px;
     color: #8e8e8e;
     line-height: 18px;
+}
+#pwd + span.check_pass::before {
+	content: '안전 ';
+}
+#pwd + span.check_fail::before {
+	content: '사용불가 ';
+}
+.check_fail {
+	color: red;
+}
+.check_pass {
+	color: #08a600;
 }
 .yyyymmdd {
     display: flex;
