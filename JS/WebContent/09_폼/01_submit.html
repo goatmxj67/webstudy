@@ -35,8 +35,8 @@
 			console.log(event);
 			if (query.value == '') {
 				alert('검색어를 입력하세요.');
-				query.focus();  // 포커스 : 커서를 옮겨준다.
-				event.defaultPrevented = true;  // submit의 기본 동작을 막는다. 
+				query.focus();  // 포커스 : 커서를 옮겨준다. 
+				event.preventDefault();  // submit의 기본 동작을 막는다.
 				return false;
 			}
 		});
