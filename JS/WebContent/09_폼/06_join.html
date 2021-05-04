@@ -81,10 +81,10 @@
                     <!-- 년,월,일input상자 -->
                     <div class="yyyymmdd">
                         <div class="ps_box ps_box2 no_padding_ps_box">
-                            <input type="text" id="yyyy" class="int int2" name="yyyy" placeholder="년(4자)">
+                            <input type="text" maxlength="4" id="yyyy" class="int int2" name="yyyy" placeholder="년(4자)">
                         </div>
                         <div class="ps_box ps_box2 no_padding_ps_box">    
-                            <select class="int int2" name="mm">
+                            <select class="int int2" id="mm" name="mm">
                                 <option value="">월</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -101,9 +101,11 @@
                             </select>
                         </div>
                         <div class="ps_box ps_box2 no_padding_ps_box">    
-                            <input type="text" id="dd" class="int int2" name="dd" placeholder="일">
+                            <input type="text" maxlength="2" id="dd" class="int int2" name="dd" placeholder="일">
                         </div>
                     </div>
+                    <!-- 생년월일체크결과 -->
+                    <p id="birth_check" class="check_fail"></p>
                 </div>
                 <!-- 성별label,input -->
                 <div class="join_row">
@@ -250,6 +252,46 @@
     			}
     		}
     	});
+    	
+    	let yyyy = document.getElementById('yyyy');
+    	let mm = document.getElementById('mm');
+    	let dd = document.getElementById('dd');
+    	let birthCheck = document.getElementById('birth_check');
+    	yyyy.addEventListener('blur', function(){
+    		if (yyyy.value.length < 4) {
+    			birthCheck.textContent = '태어난 년도 4자리를 정확하게 입력하세요.';
+    		} else {
+    			birthCheck.textContent = '태어난 월을 선택하세요.';
+    		}
+    	});
+    	mm.addEventListener('blur', function(){
+    		if (mm.value == '') {
+    			birthCheck.textContent = '태어난 월을 선택하세요.';
+    		} else {
+    			birthCheck.textContent = '태어난 일(날짜) 2자리를 정확하게 입력하세요.';
+    		}
+    	});
+    	dd.addEventListener('blur', function(){
+    		if (dd.value.length == '') {
+    			birthCheck.textContent = '태어난 일(날짜) 2자리를 정확하게 입력하세요.';
+    		} else {
+    			let nowYear = new Date().getFullYear();
+    			// number - string -> number 타입으로 자동변환 됨 /,*도 마찬가지(단, +는 안됨)
+    			if (nowYear - yyyy.value >= 100) {
+        			birthCheck.textContent = '정말이세요?';
+    			} else if (nowYear < yyyy.value) {
+    				birthCheck.textContent = '미래에서 오셨군요. ^^';
+    			} else {
+    				birthCheck.textContent = '';
+    			}
+    		}
+    	});
+    	
+    	
+    	
+    	
+    	
+    	
     	
     </script> 
 </body>
