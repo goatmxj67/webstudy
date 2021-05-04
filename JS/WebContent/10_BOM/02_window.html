@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script>
+		
+		// 1. 새 창 열기
+		//     1) open('URL', 'name', 'spec')
+		// 	   2) 'URL' : 생략하면 비어 있는 창, 열어 줄 파일의 경로를 작성한다.
+		//     3) 'name' : 열어 줄 창의 name을 작성한다.
+		//     4) 'spec' : width, height, top, left, bottom, right, resizable 등
+		
+		// 팝업 처리
+		var isBlocked = false;
+		try {
+			var blankWindow = open('', '', 'width=640, height=480, top=300, left=300, resizable=no');  // spec의 단위는 픽셀(px)
+			if( blankWindow == null ) {
+				isBlocked = true;
+			}			
+		} catch (e) {
+			isBlocked = true;
+		}
+		if (isBlocked) {
+			alert('팝업 차단을 해제해 주세요.');
+		}
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
