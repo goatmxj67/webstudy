@@ -17,10 +17,18 @@
 			// 2. 개별 선택을 클릭했을 때
 			for (let i = 0; i < chks.length; i++) {
 				chks[i].addEventListener('click', function(){
-					
+					// 하나라도 체크 상태가 변하면 모든 체크 상태를 확인해 봐야 한다.
+					for (let j = 0; j < chks.length; j++) {
+						if (chks[j].checked == false) {
+							chkAll.checked = false;
+							return;  // click 이벤트의 리스너(익명 함수) 종료
+						}
+					}
+					// 모두 체크되어 있는 경우 for (let j = 0; j < chks.length; j++){} 루프를 모두 돌고
+					// 여기로 온다.
+					chkAll.checked = true;
 				});
 			}
-			
 		}
 	</script>
 </head>
