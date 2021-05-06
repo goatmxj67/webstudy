@@ -1,0 +1,44 @@
+웹 서비스 인프라
+Restful API 설계/구현에 능숙하신 분
+객체지향 개발, 리팩토링, 자동화 테스트에 대한 지식
+Hadoop, Spark, kafka 등을 활용한 대용량 데이터 처리 경험
+Git, Linux 환경에서의 시스템 개발/운영 경험이 있으신 분
+Unix/Linux 환경에서의 개발 경험이 있으신 분
+MySQL, MongoDB 중 하나 이상 구현 경험이 있으신 분
+Docker / Kubernetes 를 사용한 서비스 개발 및 운영 경험
+Spring Framework의 구조와 매커니즘의 이해 또는 NodeJS의 구조와 매커니즘의 이해
+RDBMS, NoSQL 를 사용한 서비스 개발
+
+
+ Languages : Java, Kotlin, Python, Javascript
+- Frameworks : Spring, Spring Boot, Django
+- Data Sources : MySql, MongoDB, Impala, Hadoop, Redis, Elastic Search, Kafka, RabbitMQ
+- Development Tools : Intellij, Maven, Gradle, Jenkins, Git
+
+
+CS 관련 탄탄한 기본기를 바탕으로 습득이 빠르신 분
+기본적인 CS 기반 지식 (DS, Algorithm, OS, Database 등)
+1. basic
+CA : 캐시, 파이프라인
+DS : 입력, 삭제, 수정, 검색, 복잡도
+AL : 정렬 알고리즘 구현, 복잡도
+OS : CPU 스케줄러, 동기화
+NW : TCP원리, 비동기I/O 구현
+DB : 정규화
+SE : 디자인 패턴을 이용한 프로그램 제작
+PM : 확약과 전념, 스크럼보드
+VIM : without mouse click
+UML : 클래스 다이어그램, 시퀀트 다이어그램(커맨드 패턴)
+WEB : Bootstrap
+2. language
+Javascript, html, css, Python, Java, C계열
+3. SE
+Style_guide, Design_pattern, Refactoring, Unittest
+4. PM
+Scrum(Trello), Agile, WIKI
+5. Web
+HTTP protocol, HTML5, Javascript, *JS(framework)
+6. MISC
+Linux, VIM, Shell_script, UML
+7. DevOps, CI (Jenkins)
+8. READING ENGLISH SKILL
