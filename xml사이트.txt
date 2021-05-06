@@ -1,0 +1,6 @@
+quiz03.xml / quiz04.xml 파일 받아 온 사이트
+http://www.weather.go.kr/XML/weather/sfc_web_map.xml
+http://www.kma.go.kr/XML/weather/sfc_web_map.xml
+
+기상청 rss 검색 -> 중기예보 rss 클릭
+http://www.kma.go.kr/weather/forecast/mid-term-rss3.jsp?stnId=108
