@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script>
+		onload = function(){
+			var request = new XMLHttpRequest();
+			request.open('get', 'person.xml', true);
+			request.send();
+			request.onreadystatechange = function(){
+				if (request.readyState == 4 && request.status == 200) {
+					//document.getElementById('receive').textContent = request.responseText;
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="receive">
+	</div>
+</body>
+</html>
