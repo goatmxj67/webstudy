@@ -26,3 +26,7 @@ jQuery Core 3.6.0 - uncompressed, minified, slim, slim minified
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script> 
 => 삽입
+
+--------------------------
+
+https://cdnjs.com/ -> cookie 검색 -> jquery-cookie 1.4.1
