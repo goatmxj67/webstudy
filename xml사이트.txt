@@ -4,3 +4,25 @@ http://www.kma.go.kr/XML/weather/sfc_web_map.xml
 
 기상청 rss 검색 -> 중기예보 rss 클릭
 http://www.kma.go.kr/weather/forecast/mid-term-rss3.jsp?stnId=108
+
+
+
+------------------jquery 사용하는 방법-----------------------------
+<방법 1 - 파일 넣기>
+https://jquery.com/ -> 다운로드 클릭 -> 
+Download the compressed, production jQuery 3.6.0 (알아보기 힘듦)
+
+Download the uncompressed, development jQuery 3.6.0 (개발자용)
+-> 다른이름으로 저장
+D:\SPRING0303\webstudy\JS\WebContent\js에 넣기
+
+<방법 2 - font-awesome처럼 링크 복사>
+<Using jQuery with a CDN>
+https://code.jquery.com
+jQuery Core 3.6.0 - uncompressed, minified, slim, slim minified
+-> minified 써야함
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script> 
+=> 삽입
